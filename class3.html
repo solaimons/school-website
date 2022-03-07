@@ -33,26 +33,47 @@
     </div>
   </div>
 </nav>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
-</nav>
 
-<p class="h1">chemistry</p>
 
-<p class="h2">I like this class because we do some fun labs and some of the things that we learn is fun</p>
+<p class="h1">web design</p>
 
-<span class="badge rounded-pill bg-primary">molar mass</span>
-<span class="badge rounded-pill bg-secondary">atomic mass</span>
-<span class="badge rounded-pill bg-success">balanced</span>
+<p class="h2">I like this class becuase it lets be creative and helps me better undersand how computers work</p>
+
+
+<button type="button" class="btn btn-primary">bootstap</button>
+<button type="button" class="btn btn-secondary">html</button>
+<button type="button" class="btn btn-success">css</button>
+
 <br>
 
-<img src="glow.jpg" alt="Italian Trulli" height="500px"class="glow">
+<img src="coding1.jpg" alt="Italian Trulli" width="300px" height="300px" class="img-fluid" >
+
+<img src="coding2.jpg" alt="Italian Trulli"width="300px" height="300px"  >
+
 
 <div class="container mt-3">
 
-  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
-  <div id="demo" class="collapse">
-class is mad light like a peice of bread
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="best website" data-bs-content="kanye west ">
+    best website
+  </button>
+</div>
 
-  </div>
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
+
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+favorite website i made
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">kanye west</a></li>
+    <li><a class="dropdown-item" href="#">holiday card</a></li>
+    <li><a class="dropdown-item" href="#">anime watch guide</a></li>
+  </ul>
 </div>
